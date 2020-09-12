@@ -33,7 +33,7 @@ export default class Menu extends Component {
 
 
         render() { 
-                
+                if (this.props.dishes == null ) { return <div></div>}
                 const menu = this.props.dishes.map((dish) => {
                         return (
                           <div  className="col-12 col-md-5 m-1">
